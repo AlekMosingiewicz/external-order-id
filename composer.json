@@ -1,7 +1,8 @@
 {
    "name":"alekmosingiewicz/external-order-id",
    "description":"External order id for Magento orders",
-   "type": "library",
+   "version": "1.0.1",
+   "type": "magento2-module",
    "authors": [
         {
             "name": "Alek Mosingiewicz",
@@ -11,6 +12,7 @@
         }
    ],
    "autoload": {
+        "files": [ "src/registration.php" ],
         "psr-4": {
             "AlekMosingiewicz\\ExternalOrderId\\": "./src"
         }
