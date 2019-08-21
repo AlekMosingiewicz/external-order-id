@@ -32,7 +32,7 @@ class ExternalOrderSetter
             'value' => ''
         ];
 
-        $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']['shippingAddress']['children']['shipping-address-fieldset']['children'][$externalOrderIdCode] = $externalOrderId;
+        $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children'][$externalOrderIdCode] = $externalOrderId;
         return $jsLayout;
     }
 }
