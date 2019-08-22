@@ -56,9 +56,9 @@ class UpgradeData implements UpgradeDataInterface
 
         ];
 
-        $quoteInstaller->addAttribute('quote', $code, ['type' => $type, 'length'=> 40, 'visible' => false, 'nullable' => true,]);
-        $salesInstaller->addAttribute('order', $code, ['type' => $type, 'length'=> 40, 'visible' => false,'nullable' => true,]);
-        $salesInstaller->addAttribute('invoice', $code, ['type' => $type, 'length'=> 40, 'visible' => false, 'nullable' => true,]);
+        $quoteInstaller->addAttribute('quote', $code, ['type' => $type, 'length'=> 40, 'visible' => false ]);
+        $salesInstaller->addAttribute('order', $code, ['type' => $type, 'length'=> 40, 'visible' => false ]);
+        $salesInstaller->addAttribute('invoice', $code, ['type' => $type, 'length'=> 40, 'visible' => false ]);
 
         $setup->endSetup();
     }

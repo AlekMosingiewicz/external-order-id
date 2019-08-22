@@ -13,15 +13,15 @@ class ExternalOrderSetter
             'component' => 'Magento_Ui/js/form/element/abstract',
             'config' => [
                 // customScope is used to group elements within a single form (e.g. they can be validated separately)
-                'customScope' => 'shippingAddress.custom_attributes',
+                'customScope' => 'shippingAddress',
                 'customEntry' => null,
                 'template' => 'ui/form/field',
                 'elementTmpl' => 'ui/form/element/input',
             ],
-            'dataScope' => 'shippingAddress.custom_attributes' . '.' . $externalOrderIdCode,
+            'dataScope' => 'shippingAddress' . '.' . $externalOrderIdCode,
             'label' => 'External Order Id',
             'provider' => 'checkoutProvider',
-            'sortOrder' => 0,
+            'sortOrder' => 1,
             'validation' => [
                 'required-entry' => true
             ],
@@ -32,7 +32,7 @@ class ExternalOrderSetter
             'value' => ''
         ];
 
-        $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children'][$externalOrderIdCode] = $externalOrderId;
+        $jsLayout['components']['checkout']['children']['steps']['children']['shipping-step']['children']['shippingAddress']['children']['before-form']['children'][$externalOrderIdCode] = $externalOrderId;
         return $jsLayout;
     }
 }

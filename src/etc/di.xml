@@ -2,4 +2,7 @@
     <type name="Magento\Checkout\Block\Checkout\LayoutProcessor">
         <plugin name="AlekMosingiewicz_ExternalOrderId" type="AlekMosingiewicz\ExternalOrderId\Plugin\ExternalOrderSetter" sortOrder="1" disabled="false" />
     </type>
+    <type name="Magento\Checkout\Model\ShippingInformationManagement">
+        <plugin name="AlekMosingiewicz_ExternalOrderIdShipping" type="AlekMosingiewicz\ExternalOrderId\Plugin\ShippingInformationManagementPlugin" sortOrder="20" disabled="false" />
+    </type>
 </config>
