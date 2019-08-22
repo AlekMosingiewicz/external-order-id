@@ -16,9 +16,12 @@ define([
             }
 
             // you can extract value of extension attribute from any place (in this example I use customAttributes approach)
+            var externalOrderId = jQuery('[name="external_order_id"]').val();
             shippingAddress['extension_attributes']['external_order_id'] = jQuery('[name="external_order_id"]').val();
             // pass execution to original action ('Magento_Checkout/js/action/set-shipping-information')
-            return originalAction();
+            if (externalOrderId.length > 0 && externalOrderId.length <= 40) {
+                return originalAction();
+            }
         });
     };
 });

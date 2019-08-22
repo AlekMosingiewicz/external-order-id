@@ -23,7 +23,9 @@ class ExternalOrderSetter
             'provider' => 'checkoutProvider',
             'sortOrder' => 1,
             'validation' => [
-                'required-entry' => true
+                'required-entry' => true,
+                'validate-length' => true,
+                'max_text_length' => 40
             ],
             'options' => [],
             'filterBy' => null,
