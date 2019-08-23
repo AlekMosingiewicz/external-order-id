@@ -31,5 +31,4 @@ class SaveOrderBeforeSalesModelQuoteObserver implements ObserverInterface
 
         $this->objectCopyService->copyFieldsetToTarget('sales_convert_quote', 'to_order', $quote, $order);
     }
-
 }

@@ -3,7 +3,6 @@
 
 namespace AlekMosingiewicz\ExternalOrderId\Plugin;
 
-
 class ShippingInformationManagementPlugin
 {
     protected $quoteRepository;
