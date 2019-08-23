@@ -1,6 +1,6 @@
 <page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="content">
+        <referenceContainer name="page.main.title">
             <block name="sales_frontend_order_external_order_id" class="AlekMosingiewicz\ExternalOrderId\Block\Frontend\Order\View\ExternalOrderId" template="order/view/external_order_id.phtml" />
         </referenceContainer>
     </body>
